@@ -1,0 +1,89 @@
+/* ใช้ฟอนต์ที่ดูสะอาดตาและเรียบง่าย */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fef8fb; /* พื้นหลังสีอ่อนให้บรรยากาศอบอุ่น */
+  color: #4a4a4a; /* ข้อความสีเข้มเพื่อความอ่านง่าย */
+  margin: 0;
+  padding: 0;
+}
+
+/* สำหรับ iOS */
+.ios {
+  --ion-background-color: #f8c8e4; /* สีชมพูพลาสเทลอ่อนๆ */
+}
+
+/* สำหรับ Material Design */
+.md {
+  --ion-background-color: #f2a2c1; /* สีชมพูพลาสเทลที่เข้มขึ้นเล็กน้อย */
+}
+
+/* ปรับแต่ง ion-back-button */
+ion-back-button {
+  color: #fff !important;
+  --color-focused: #fff;
+  --color-hover: #fff;
+}
+
+/* ion-toolbar ปรับพื้นหลังให้มี gradient และเพิ่มกรอบ */
+ion-toolbar {
+  --background: linear-gradient(135deg, #f2a2c1, #f8c8e4); /* สีชมพูอ่อนๆ เกิดเป็น gradient */
+  --color: #4a4a4a; /* สีข้อความที่ดูเป็นทางการและเข้ากับสีพื้นหลัง */
+  font-family: 'Helvetica Neue', sans-serif;
+  padding: 12px 16px; /* เพิ่ม padding เพื่อความหรูหรา */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงาบางๆ ให้ดูมีมิติ */
+  border-bottom: 2px solid #e0a7b3; /* เส้นขอบบางๆ ให้ดูเป็นช่อง */
+  border-radius: 8px; /* เพิ่มมุมโค้งเพื่อความนุ่มนวล */
+}
+
+/* ปรับแต่ง ion-item ให้มีความนุ่มนวลและการเคลื่อนไหวที่ดี พร้อมกรอบ */
+ion-item {
+  --background-hover: rgba(246, 192, 210, 0.5); /* สีชมพูอ่อนๆ สำหรับโฮเวอร์ */
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out; /* เพิ่ม transition สำหรับการเคลื่อนไหว */
+  border-radius: 8px; /* ให้มุมโค้งนุ่มนวล */
+  margin-bottom: 12px; /* เพิ่มระยะห่างระหว่างรายการ */
+  border: 1px solid #e0a7b3; /* เพิ่มกรอบสีชมพูอ่อน */
+  padding: 10px; /* เพิ่ม padding ภายใน ion-item */
+}
+
+ion-item:hover {
+  transform: translateY(-2px); /* เพิ่มการเคลื่อนไหวเมื่อโฮเวอร์ */
+  background-color: rgba(246, 192, 210, 0.7); /* สีพื้นหลังเมื่อโฮเวอร์ */
+}
+
+ion-item:active {
+  transform: translateY(0); /* เมื่อคลิกจะคืนสภาพเดิม */
+}
+
+/* เพิ่มการปรับแต่ง ion-header พร้อมกรอบ */
+ion-header {
+  --background: #f8c8e4; /* สีพื้นหลังของส่วนหัว */
+  padding: 16px 0; /* เพิ่ม padding */
+  border-bottom: 2px solid #e0a7b3; /* เส้นขอบด้านล่าง */
+  border-radius: 8px; /* เพิ่มมุมโค้ง */
+}
+
+ion-title {
+  font-size: 22px;
+  font-weight: 600; /* ทำให้ชื่อหัวข้อดูเด่น */
+  color: #4a4a4a;
+  text-align: center;
+}
+
+/* เพิ่มส่วนของ ion-content พร้อมกรอบ */
+ion-content {
+  background-color: #fff; /* พื้นหลังขาวเพื่อให้เนื้อหาดูสะอาดตา */
+  border-radius: 16px; /* มุมโค้งแบบนุ่มนวล */
+  padding: 16px; /* เพิ่ม padding */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้เนื้อหาดูเด่นขึ้น */
+  margin: 20px; /* เพิ่มระยะห่างรอบๆ */
+  border: 2px solid #e0a7b3; /* เพิ่มกรอบสีชมพูอ่อน */
+}
+
+/* เพิ่ม ion-footer */
+ion-footer {
+  --background: #f8c8e4; /* ใช้สีชมพูเดียวกันใน footer */
+  padding: 12px;
+  text-align: center;
+  border-top: 2px solid #e0a7b3; /* เพิ่มเส้นขอบด้านบน */
+  border-radius: 8px; /* เพิ่มมุมโค้งให้ footer */
+}
